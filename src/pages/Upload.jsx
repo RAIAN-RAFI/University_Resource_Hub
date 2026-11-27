@@ -125,6 +125,7 @@ function Upload() {
         type,
         fileUrl,
         uploadedBy: auth.currentUser.displayName || auth.currentUser.email,
+        ownerId: auth.currentUser.uid,
         createdAt: serverTimestamp(),
         ratingSum: 0,
         ratingCount: 0,
